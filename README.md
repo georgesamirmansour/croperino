@@ -1,10 +1,9 @@
 # Croperino
 
-> A simple image cropping tool for your android applications (v2)
+Leatest version
+--------
+<img src='https://jitpack.io/v/georgesamirmansour/croperino.svg'>
 
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Croperino-brightgreen.svg?style=popout-square)](https://android-arsenal.com/details/1/4374)
-[![Android Arsenal](https://img.shields.io/badge/Twitter-mike14u-blue.svg?style=popout-square)](https://www.twitter.com/mike14u)
-[![Android Arsenal](https://img.shields.io/badge/Github-mike14u-ff69b4.svg?style=popout-square)](https://github.com/mike14u)
 
 Supported SDK and Gradle Version:
 * Minimum SDK Version 14
@@ -33,7 +32,7 @@ repositories {
 ```
 
 ```
-implementation 'com.github.mike14u:croperino:2'
+  implementation 'com.github.georgesamirmansour:croperino:Tag'
 ```
 
 ## Usage
