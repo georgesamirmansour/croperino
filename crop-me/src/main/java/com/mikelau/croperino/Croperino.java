@@ -8,7 +8,8 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.support.v4.content.FileProvider;
+import androidx.fragment.app.Fragment;
+import androidx.core.content.FileProvider;
 
 import java.io.File;
 import java.io.IOException;
@@ -27,6 +28,17 @@ public class Croperino {
         intent.putExtra("color", color);
         intent.putExtra("bgColor", bgColor);
         ctx.startActivityForResult(intent, CroperinoConfig.REQUEST_CROP_PHOTO);
+    }
+
+    public static void runCropImage(File file, Fragment fragment, boolean isScalable, int aspectX, int aspectY, int color, int bgColor) {
+        Intent intent = new Intent(fragment.getActivity(), CropImage.class);
+        intent.putExtra(CropImage.IMAGE_PATH, file.getPath());
+        intent.putExtra(CropImage.SCALE, isScalable);
+        intent.putExtra(CropImage.ASPECT_X, aspectX);
+        intent.putExtra(CropImage.ASPECT_Y, aspectY);
+        intent.putExtra("color", color);
+        intent.putExtra("bgColor", bgColor);
+        fragment.startActivityForResult(intent, CroperinoConfig.REQUEST_CROP_PHOTO);
     }
 
     public static void prepareChooser(final Activity ctx, String message, int color) {
