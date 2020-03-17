@@ -1,6 +1,6 @@
 # Croperino
 
-> A simple image cropping tool for your android applications (v1.1.8)
+> A simple image cropping tool for your android applications (v2)
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Croperino-brightgreen.svg?style=popout-square)](https://android-arsenal.com/details/1/4374)
 [![Android Arsenal](https://img.shields.io/badge/Twitter-mike14u-blue.svg?style=popout-square)](https://www.twitter.com/mike14u)
@@ -33,7 +33,7 @@ repositories {
 ```
 
 ```
-implementation 'com.github.mike14u:croperino:1.1.8'
+implementation 'com.github.mike14u:croperino:2'
 ```
 
 ## Usage
